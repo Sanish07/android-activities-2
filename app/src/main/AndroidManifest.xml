@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cse225">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CSE225">
+        <activity
+            android:name=".AlarmMan"
+            android:exported="false" />
+        <activity
+            android:name=".BottomNavbarEx"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SeekBarExample"
+            android:exported="true"></activity>
+        <activity
+            android:name=".CustomToastExample"
+            android:exported="true" />
+        <activity
+            android:name=".TextChangeProgress"
+            android:exported="true" />
+        <activity
+            android:name=".ProgressBarExample"
+            android:exported="true" />
+        <activity
+            android:name=".Practice_Edit"
+            android:exported="true" />
+        <activity
+            android:name=".ToolbarExample"
+            android:exported="true"
+            android:theme="@style/Theme.CSE225.NoActionBar" />
+        <activity
+            android:name=".RatingBarAvg"
+            android:exported="true" />
+        <activity
+            android:name=".RatingBarExample"
+            android:exported="true" />
+        <activity
+            android:name=".SplashScreenRedir"
+            android:exported="true" />
+        <activity
+            android:name=".SplashScreenExample"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <receiver android:name=".AlarmManBroadcast" />
+
+    </application>
+
+</manifest>

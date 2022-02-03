@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".RatingBarExample">
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rateBar1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:numStars="6"
+        android:progressBackgroundTint="#E0D3D3"
+        android:progressTint="#FF008E"
+        android:secondaryProgressTint="#FF008E"
+        android:rating="1"/>
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rateBar2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rateBar1"
+        android:progressBackgroundTint="#E0D3D3"
+        android:progressTint="#FF008E"
+        android:secondaryProgressTint="#FF008E"
+        android:layout_marginTop="20dp"
+        android:numStars="6"
+        android:rating="1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rateBar2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/rateSub"
+        android:text="Submit"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ratings will show here "
+        android:id="@+id/rateFeed"
+        android:layout_below="@id/rateSub"
+        android:layout_marginTop="40dp"
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

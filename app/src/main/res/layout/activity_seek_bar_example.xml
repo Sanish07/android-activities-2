@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SeekBarExample">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Media Player Example"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="100dp"/>
+
+    <SeekBar
+        android:layout_width="232dp"
+        android:layout_height="60dp"
+        android:id="@+id/seekBar1"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/backBtn"
+            android:src="@drawable/ic_baseline_fast_rewind_24"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/controlBtn"
+            android:src="@drawable/ic_baseline_play_circle_filled_24"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/forwardBtn"
+            android:src="@drawable/ic_baseline_fast_forward_24"/>
+    </LinearLayout>
+
+
+</LinearLayout>
